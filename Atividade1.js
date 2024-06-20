@@ -6,3 +6,5 @@ const rl = readline.createInterface({
 })
 
 let lembrete = []
+
+console.log("Atualização de atividade!")
