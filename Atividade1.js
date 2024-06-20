@@ -6,6 +6,7 @@ const rl = readline.createInterface({
 })
 
 let lembrete = []
+
 exibirMenu()
 
 function exibirMenu() {
@@ -46,3 +47,4 @@ function exibirMenu() {
         }
     })
 }
+console.log("Atualização de atividade!")
