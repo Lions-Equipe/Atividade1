@@ -48,3 +48,22 @@ function exibirMenu() {
     })
 }
 console.log("Atualização de atividade!")
+
+//função editar feita por Edu
+
+function editar (){
+    lembrete.forEach((lembreteEditar, i) => {
+        console.log(`${i +1}. ${lembreteEditar} `)
+        rl.question("Qual lembrete você gostaria de editar",(lembrete)=>{
+            rl.question("Qual prazo você gostaria de editar",(prazo)=> {
+                rl.question("Qual status você gostaria de editar",(status)=> {
+                   lembretes[i-1]={lembrete,prazo,status}
+
+                   console.log('editado com sucesso')
+                   }) 
+                })
+
+            })
+        })
+    }
+
