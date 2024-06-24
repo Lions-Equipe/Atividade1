@@ -46,6 +46,21 @@ function exibirMenu() {
         }
     })
 }
+funcaoRemover
+console.log("Atualização de atividade!")
+
+//função remover feita por guigaaaa
+function remover(){
+    rl.question('Digite o número de qual lembrete você deseja remover', (entrada) => {
+        if(entrada > 0 && entrada < lembrete.length){
+            lembrete.splice(entrada - 1, 1)
+            console.log('Lembrete removido com sucesso!')
+            exibirMenu()
+        }else{
+            console.log('Valor invalido!')
+            remover()
+        }
+    })
 
 function ListarLembrete() {
     if(lembrete == '') {
