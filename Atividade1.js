@@ -6,7 +6,6 @@ const rl = readline.createInterface({
 })
 
 let lembrete = []
-
 exibirMenu()
 
 function exibirMenu() {
@@ -47,6 +46,7 @@ function exibirMenu() {
         }
     })
 }
+funcaoRemover
 console.log("Atualização de atividade!")
 
 //função remover feita por guigaaaa
@@ -61,4 +61,13 @@ function remover(){
             remover()
         }
     })
+
+function ListarLembrete() {
+    if(lembrete == '') {
+        console.log('Nenhum Lembrete salvo.')
+    } 
+    for (let i = 0; i < lembrete.length; i++) {
+        console.log(`${i + 1}. ${lembrete[i]}`)
+    }
+    exibirMenu() 
 }
